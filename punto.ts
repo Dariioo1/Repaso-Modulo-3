@@ -81,4 +81,7 @@ export class Punto
            return cercano;
         }
     }
+
+
+   
 }
