@@ -1,10 +1,10 @@
 "use strict";
 exports.__esModule = true;
 var punto_1 = require("./punto");
+var triangulo_1 = require("./triangulo");
 var coordenada1 = new punto_1.Punto(3, 5);
 var coordenada2 = new punto_1.Punto(4, 1);
 console.log(coordenada1);
-console.log(coordenada1.toString());
 console.log(coordenada1.getX());
 console.log(coordenada1.getY());
 console.log(coordenada1.calcularDistancia(coordenada2));
@@ -14,3 +14,5 @@ var coordenada3 = new punto_1.Punto(1, 7);
 var coordenada4 = new punto_1.Punto(3, 6);
 var CoordenadasArray = [coordenada3, coordenada4];
 console.log(coordenada1.calcularMasCercano(CoordenadasArray));
+var NuevoTriangulo = new triangulo_1.Triangulo(coordenada1, coordenada2, coordenada3);
+console.log(NuevoTriangulo.calcularLongitudLados());
